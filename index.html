@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心灵鸡汤 - 随机名言生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💭 心灵鸡汤</h1>
+            <p>每日一句，启迪心灵</p>
+        </header>
+
+        <main>
+            <!-- 名言展示区域 -->
+            <section class="quote-section">
+                <div class="quote-card" id="quoteCard">
+                    <div class="quote-text" id="quoteText">点击按钮获取今日名言</div>
+                    <div class="quote-author" id="quoteAuthor"></div>
+                    <div class="quote-category" id="quoteCategory"></div>
+                </div>
+                
+                <div class="actions">
+                    <button id="newQuoteBtn" class="btn btn-primary">🎲 随机名言</button>
+                    <button id="favoriteBtn" class="btn btn-secondary">❤️ 收藏</button>
+                </div>
+            </section>
+
+            <!-- 笔记区域 -->
+            <section class="notes-section">
+                <h3>📝 我的笔记</h3>
+                <textarea id="noteTextarea" placeholder="记录你对这条名言的感悟..."></textarea>
+                <button id="saveNoteBtn" class="btn">保存笔记</button>
+                <div id="savedNotes"></div>
+            </section>
+
+            <!-- 收藏夹区域 -->
+            <section class="favorites-section">
+                <h3>⭐ 我的收藏</h3>
+                <div id="favoritesList"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>随机名言生成器 - 开源项目</p>
+        </footer>
+    </div>
+
+    <script src="js/quotes.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

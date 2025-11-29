@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 40px;
+}
+
+/* 名言卡片样式 */
+.quote-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.quote-card {
+    background: #f8f9fa;
+    border-left: 5px solid #667eea;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.quote-text {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.quote-author {
+    font-size: 1.1em;
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quote-category {
+    display: inline-block;
+    background: #e9ecef;
+    color: #6c757d;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #cb1fde, #be41b2);
+    color: white;
+}
+
+.btn-secondary {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 笔记区域 */
+.notes-section, .favorites-section {
+    margin-bottom: 40px;
+}
+
+.notes-section h3, .favorites-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+#noteTextarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1em;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+#noteTextarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.note-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 3px solid #28a745;
+}
+
+.note-quote {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.note-content {
+    color: #2c3e50;
+}
+
+.note-date {
+    font-size: 0.8em;
+    color: #6c757d;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* 收藏夹样式 */
+.favorite-item {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.remove-favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .quote-text {
+        font-size: 1.2em;
+    }
+    
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
