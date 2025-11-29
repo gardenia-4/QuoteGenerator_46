@@ -24,7 +24,7 @@
 - LocalStorage
 
 ## 📁 项目结构
-QuoteGenerator_4G/
+QuoteGenerator_46/
 ├── index.html
 ├── style.css
 ├── README.md
